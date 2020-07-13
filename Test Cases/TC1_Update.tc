@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1_Update</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97c15663-15e3-4807-8828-a2444e9f2599</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>00e3b6b2-3497-4501-b24b-210ad5b0d175</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>06b7d453-f631-47fb-a54d-d81f170c5747</id>
+      <masked>false</masked>
+      <name>job</name>
+   </variable>
+</TestCaseEntity>
