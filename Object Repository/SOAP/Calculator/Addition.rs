@@ -36,14 +36,14 @@
    <soapServiceFunction>Add</soapServiceFunction>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>0</defaultValue>
+      <defaultValue>4</defaultValue>
       <description></description>
       <id>8b046b2e-efbb-4a52-840a-7d21ba894705</id>
       <masked>false</masked>
       <name>A</name>
    </variables>
    <variables>
-      <defaultValue>0</defaultValue>
+      <defaultValue>5</defaultValue>
       <description></description>
       <id>0da3c247-afd9-4b95-b201-c6918b77f17c</id>
       <masked>false</masked>
@@ -74,6 +74,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 //def variable= variables.get('B')//
 
 assertThat(response.getResponseText()).contains('0')
-</verificationScript>
+
+WS.verifyElementText(response, 'AddResponse.AddResult', '9')</verificationScript>
    <wsdlAddress>http://www.dneonline.com/calculator.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>
